@@ -13,7 +13,7 @@ class _HomeScreenState extends State<HomeScreen> {
   Completer<GoogleMapController> _controller = Completer();
 
   static final CameraPosition KGooqlePlex = const CameraPosition(
-    target: LatLng(37.42796133580664, -122.085749655962),
+    target: LatLng(32.5012532, 74.4981116),
     zoom: 14,
   );
 
@@ -21,8 +21,10 @@ class _HomeScreenState extends State<HomeScreen> {
   List<Marker> _list=const [
     Marker(
         markerId: MarkerId('1'),
-        position: LatLng(37.42796133580664, -122.085749655962),
-
+        position: LatLng(32.5012532, 74.4981116),
+        infoWindow: InfoWindow(
+          title: 'My position'
+        ),
     )
   ];
 
