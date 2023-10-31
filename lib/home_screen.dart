@@ -18,13 +18,20 @@ class _HomeScreenState extends State<HomeScreen> {
   );
 
   List<Marker> _marker=[];
-  List<Marker> _list=const [
+  final List<Marker> _list=const [
     Marker(
         markerId: MarkerId('1'),
         position: LatLng(32.5012532, 74.4981116),
         infoWindow: InfoWindow(
-          title: 'My position'
+          title: 'My Current Location'
         ),
+    ),
+    Marker(
+      markerId: MarkerId('2'),
+      position: LatLng( 32.5232139833, 74.5267659933),
+      infoWindow: InfoWindow(
+          title: 'Ghanta Ghar'
+      )
     )
   ];
 
